@@ -34,6 +34,8 @@
 #include <QHBoxLayout>
 #include <QGroupBox>
 #include <QAbstractButton>
+#include <QAction>
+#include <QButtonGroup>
 #include <QCheckBox>
 #include <QSpinBox>
 #include <QCommandLinkButton>
