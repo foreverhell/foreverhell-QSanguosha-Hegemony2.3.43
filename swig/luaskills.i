@@ -1,4 +1,4 @@
-﻿/********************************************************************
+/********************************************************************
     Copyright (c) 2013-2015 - Mogara
 
   This file is part of QSanguosha-Hegemony.
@@ -1466,7 +1466,7 @@ QString LuaViewAsSkill::getExpandPile() const
     int error = lua_pcall(L, 1, 1, 0);
     if (error) {
         Error(L);
-        return false;
+        return QString();
     } else {
         const char *result = lua_tostring(L, -1);
         lua_pop(L, 1);
