@@ -31,9 +31,9 @@ Mogara
 #include <QBrush>
 #include <QFile>
 
-#include "SkinBank.h"
+#include "skinbank.h"
 #include "engine.h"
-#include "QSanSelectableItem.h"
+#include "qsanselectableitem.h"
 
 RectObject::RectObject(const QBrush &brush /*= QBrush()*/, QGraphicsItem *parent /*= NULL*/)
 	: QGraphicsObject(parent), m_brush(brush)
