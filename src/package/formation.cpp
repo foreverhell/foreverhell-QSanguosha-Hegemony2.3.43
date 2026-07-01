@@ -1278,7 +1278,7 @@ public:
 
     virtual void record(TriggerEvent, Room *room, ServerPlayer *player, QVariant &data) const
     {
-        if (player && player->isAlive() && player->hasLordSkill(objectName()) && data.toBool() == player->inHeadSkills(objectName() && player->hasShownGeneral1())){
+        if (player && player->isAlive() && player->hasLordSkill(objectName()) && data.toBool() == player->inHeadSkills(objectName()) && player->hasShownGeneral1()){
             room->sendCompulsoryTriggerLog(player, objectName());
             room->broadcastSkillInvoke(objectName(), player);
         }
